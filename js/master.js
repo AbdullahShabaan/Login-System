@@ -13,7 +13,7 @@ loginBtn.addEventListener("click", function (e) {
       let user = getData(email.value, password.value);
       localStorage.setItem("auth", user.email);
       localStorage.setItem("username", user.name);
-      window.location.pathname = "Pages/Home.html";
+      window.location.pathname = "Login-System/Pages/Home.html";
     } else {
       message.innerHTML = `<span class="text-danger">Wrong password or email</span>`;
     }
