@@ -74,7 +74,7 @@ function register() {
 }
 function goToLogin() {
   setTimeout(() => {
-    window.location.pathname = "/index.html";
+    window.location.href = "/";
   }, 1000);
 }
 function clearValues() {

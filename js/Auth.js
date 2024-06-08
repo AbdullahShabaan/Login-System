@@ -2,6 +2,7 @@ const username = document.getElementById("name");
 const logoutBtn = document.getElementById("logout");
 class Auth {
   constructor() {
+    document.body.style.display = "none";
     const auth = localStorage.getItem("auth");
     this.validateAuth(auth);
   }
@@ -14,15 +15,16 @@ class Auth {
       element.email == auth ? (valid = true) : "";
     });
     if (valid) {
+      document.body.style.display = "block";
       username.innerHTML = `Welcome ${localStorage.getItem("username")}`;
     } else {
-      window.location.pathname = "/index.html";
+      window.location.href = "/";
     }
   }
 
   logOut() {
     localStorage.removeItem("auth");
-    window.location.pathname = "/index.html";
+    window.location.href = "/";
   }
 }
 let member = new Auth();
