@@ -18,13 +18,13 @@ class Auth {
       document.body.style.display = "block";
       username.innerHTML = `Welcome ${localStorage.getItem("username")}`;
     } else {
-      window.location.href = "/";
+      window.location.pathname = "Login-System/index.html";
     }
   }
 
   logOut() {
     localStorage.removeItem("auth");
-    window.location.href = "/";
+    window.location.pathname = "Login-System/index.html";
   }
 }
 let member = new Auth();
