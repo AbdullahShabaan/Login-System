@@ -1,0 +1,44 @@
+:root {
+  --main-color: #17a2b8;
+}
+body {
+  background-color: #24353f;
+  font-family: sans-serif;
+}
+h1 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+.form-content {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  color: white !important;
+}
+form .form-content input {
+  background-color: inherit !important;
+  border: 1px solid #ced4da;
+  transition: 0.4s;
+  color: white !important;
+}
+form .form-content input:focus {
+  box-shadow: none;
+  border: 1px solid var(--main-color);
+}
+form .form-content input::placeholder {
+  color: #ced4da;
+  opacity: 0.8;
+}
+form .form-content input[type="submit"] {
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+form .form-content input[type="submit"]:hover {
+  background-color: #17a2b8 !important;
+  color: white;
+}
+form .form-content p a {
+  color: white;
+  text-decoration: none;
+}
+.content {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
