@@ -74,7 +74,7 @@ function register() {
 }
 function goToLogin() {
   setTimeout(() => {
-    window.location.replace = "/Login-System/index.html";
+    window.location.pathname = "Login-System/index.html";
   }, 1000);
 }
 function clearValues() {
